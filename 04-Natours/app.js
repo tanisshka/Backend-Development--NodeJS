@@ -9,8 +9,6 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(express.static(`${__dirname}/public`));
 
-app.set('query parser', 'extended');
-
 app.use('/api/tours', tourRoute);
 app.use('/api/users', userRoute);
 
